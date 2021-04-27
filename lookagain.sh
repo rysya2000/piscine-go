@@ -1,1 +1,1 @@
-find -name '*h' | cut -d "." -f1
+grep '*h' * | cut -d '.' -f1
