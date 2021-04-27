@@ -1,1 +1,2 @@
-find -name '*sh' | cut -d '/' -f2
+find -name '*sh' | cut -d '/' -f2 | cut -d '.' -f1
+
