@@ -1,1 +1,1 @@
-grep '*h' * | cut -d '.' -f1
+find -name '*sh' | cut -d '/' -f2
