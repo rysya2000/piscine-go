@@ -1,5 +1,5 @@
 echo Annabel Church
-699607
-Blue Honda
-Brian Boyer Joe Germuska
-Hellen Maher
+echo 699607
+echo Blue Honda
+echo Brian Boyer Joe Germuska
+echo Hellen Maher
