@@ -1,1 +1,1 @@
-Hello rysya2000!
+echo Hello rysya2000!
