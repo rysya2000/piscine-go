@@ -12,7 +12,7 @@ func PrintNbr(n int) {
 	}
 	for p > 0 {
 		var k int = (p % 10) + 48
-		str += k
+		str += string(k)
 		p /= 10
 	}
 	for i := 0; i < len(str); i++ {
