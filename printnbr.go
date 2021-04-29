@@ -21,7 +21,7 @@ func PrintNbr(n int) {
         rns[i], rns[len(rns)-1-i] = rns[len(rns)-i-1], rns[i]
     }
     answer += string(rns)
-    for i := 0; i < len(answer); i++ {12
+    for i := 0; i < len(answer); i++ {
         z01.PrintRune(rune(answer[i]))
     }
 }
