@@ -15,7 +15,7 @@ func PrintNbr(n int) {
 		i /= 10
 	}
 	for i := 0; i < len(str); i++ {
-		str[i] = str[len(str) - i]
+		str[i] = str[len(str)-i]
 	}
 	answer += str
 	for i := 0; i < len(answer); i++ {
