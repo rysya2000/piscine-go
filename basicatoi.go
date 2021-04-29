@@ -11,5 +11,5 @@ func BasicAtoi(s string) int {
 		ans += (int(rns[i]) - '0') * k
 		k /= 10
 	}
-	return ans / 1032
+	return ans / 10
 }
