@@ -7,11 +7,11 @@ func PrintNbr(n int) {
 	var str string = ""
 	if n < 0 {
 		n *= -1
-		answer += '-'
+		answer += "-"
 	}
 	i := n
 	for i > 0 {
-		str += ((i % 10) + 48)
+		str += ((i%10) + 48)
 		i /= 10
 	}
 	for i := 0; i < len(str); i++ {
