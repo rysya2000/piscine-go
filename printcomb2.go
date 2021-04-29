@@ -7,12 +7,12 @@ func PrintComb2() {
 		for j := i + 1; j < 100; j++ {
 			if i < 10 {
 				z01.PrintRune(rune('0'))
-				z01.PrintRune(rune(i + 48))	
+				z01.PrintRune(rune(i + 48))
 				z01.PrintRune(rune(' '))
 			}
 			if j < 10 {
 				z01.PrintRune(rune('0'))
-				z01.PrintRune(rune(j + 48))	
+				z01.PrintRune(rune(j + 48))
 			}
 			if i > 9 {
 				z01.PrintRune(rune((i / 10) + 48))
