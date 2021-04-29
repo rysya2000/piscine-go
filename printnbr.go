@@ -9,10 +9,10 @@ func PrintNbr(n int) {
 		n *= -1
 		answer += "-"
 	}
-	i := n
-	for i > 0 {
-		str += ((i%10) + 48)
-		i /= 10
+	p := n
+	for p > 0 {
+		str += ((p%10) + 48)
+		p /= 10
 	}
 	for i := 0; i < len(str); i++ {
 		str[i] = str[len(str)-i]
