@@ -3,11 +3,11 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-    var answer string = ""
-    var str string = ""
-    if n < 0 {
-        z01.PrintRune('-')
-    }
+		var answer string = ""
+    	var str string = ""
+    	if n < 0 {
+        	z01.PrintRune('-')
+    	}
     for {
         var k int = (n % 10)
 		if k < 0 {
