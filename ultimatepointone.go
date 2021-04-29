@@ -1,5 +1,5 @@
 package piscine
 
 func UltimatePointOne(n ***int){
-	***n = 132
+	***n = 1
 }
