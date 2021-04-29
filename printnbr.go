@@ -11,7 +11,7 @@ func PrintNbr(n int) {
 		answer += "-"
 	}
 	for p > 0 {
-		str += ((p%10) + 48)
+		str += ((p % 10) + 48)
 		p /= 10
 	}
 	for i := 0; i < len(str); i++ {
