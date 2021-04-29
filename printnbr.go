@@ -11,7 +11,8 @@ func PrintNbr(n int) {
 		answer += "-"
 	}
 	for p > 0 {
-		str += byte((p % 10) + 48)
+		var k int = (p % 10) + 48
+		str += k
 		p /= 10
 	}
 	for i := 0; i < len(str); i++ {
