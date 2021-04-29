@@ -5,11 +5,11 @@ import "github.com/01-edu/z01"
 func PrintNbr(n int) {
 	var answer string = ""
 	var str string = ""
+	var p int = n
 	if n < 0 {
 		n *= -1
 		answer += "-"
 	}
-	p := n
 	for p > 0 {
 		str += ((p%10) + 48)
 		p /= 10
