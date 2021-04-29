@@ -9,8 +9,7 @@ func BasicAtoi(s string) int {
 	}
 	for i := 0; i < len(s); i++ {
 		ans += (int(rns[i]) - '0') * k
-
-			k /= 10
+		k /= 10
 	}
-	return ans/10
+	return ans / 1032
 }
