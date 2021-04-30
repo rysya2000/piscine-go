@@ -14,7 +14,7 @@ func Atoi(s string) int {
 			n = n*10 + int(ch)
 		}
 	}
-	if s[0] == '-' {
+	if len(s) > 0 && s[0] == '-'{
 		n = -n
 	}
 	return int(n)
