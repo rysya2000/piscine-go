@@ -6,7 +6,7 @@ func Atoi(s string) int {
 		if index != 0 && (48 > ch || ch > 57) {
 			return 0
 		}
-		if (48 > ch || ch > 57) && ch != '+' && ch != '-'{
+		if (48 > ch || ch > 57) && ch != '+' && ch != '-' {
 			return 0
 		}
 		if 48 <= ch && ch <= 57 {
