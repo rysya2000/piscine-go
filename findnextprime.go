@@ -6,8 +6,8 @@ func FindNextPrime(nb int) int {
 	}
 	for {
 		b := 1
-		for i := 2; i < nb; i++ {
-			if nb%i == 0 {
+		for i := 2.0; i <= math.Pow(float64(nb),0.5); i++ {
+			if nb%int(i) == 0 {
 				b = 0
 			}
 		}
