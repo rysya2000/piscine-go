@@ -2,9 +2,9 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func toStr(n int) string{
+func toStr(n int) string {
 	if n == 0 {
-        return "0"
+    	return "0"
     }
 	ans := ""
 	var x int
