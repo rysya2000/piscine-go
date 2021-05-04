@@ -15,7 +15,7 @@ func toStr(n int) string{
     }
 	return ans
 }
-sda
+
 func PrintNbrInOrder(n int) {
 	res := ""
 	table := []byte(toStr(n))
