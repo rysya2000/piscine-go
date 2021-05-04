@@ -1,5 +1,5 @@
 package piscine
-
+dsadsa
 import "github.com/01-edu/z01"
 
 func toStr(n int) string{
@@ -33,4 +33,3 @@ func PrintNbrInOrder(n int) {
 		z01.PrintRune(rune(res[i]))
 	}
 }
-dsadas
