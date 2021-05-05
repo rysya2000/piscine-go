@@ -15,15 +15,6 @@ func toInt(s string) int {
 	return int(n)
 }
 
-func IsValid(s string) bool {
-	for i := 0; i < len(s); i++ {
-		if s[i] < '0' || s[i] > '9' {
-			return false
-		}
-	}
-	return true
-}
-
 func main() {
 	args := os.Args
 	upper := false
