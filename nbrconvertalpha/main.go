@@ -26,35 +26,21 @@ func IsValid(s string) bool {
 
 func main() {
 	args := os.Args
-	b := false
 	upper := false
 	var x int = 1
 	if args[1] == "--upper" {
 		upper = true
 		x++
 	}
-	for i := x; i < len(args); i++ {
-		if IsValid(args[i]) == false {
-			b = true
-			break
-		}
+	y := 97
+	if upper == true {
+		y -= 32
 	}
-	if b == true {
-		for i := x; i < len(args); i++ {
+	for i := x; i < len(args); i++ {
+		if toInt(args[i]) <= 26 && toInt(args[i]) > 0 {
+			z01.PrintRune(rune(toInt(args[i]) + y - 1))
+		} else {
 			z01.PrintRune(rune(' '))
-		}
- 	}
-	if b == false {
-		y := 97
-		if upper == true {
-			y -= 32
-		}
-		for i := x; i < len(args); i++ {
-			if toInt(args[i]) <= 26 && toInt(args[i]) > 0 {
-				z01.PrintRune(rune(toInt(args[i]) + y - 1))
-			} else {
-				z01.PrintRune(rune(' '))
-			}
 		}
 	}
 	z01.PrintRune(rune('\n'))
