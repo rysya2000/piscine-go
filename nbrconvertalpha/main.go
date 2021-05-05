@@ -19,7 +19,7 @@ func main() {
 	args := os.Args
 	upper := false
 	var x int = 1
-	if args[1] == "--upper" {
+	if len(args) > 1 && args[1] == "--upper" {
 		upper = true
 		x++
 	}
