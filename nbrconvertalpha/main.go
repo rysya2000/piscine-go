@@ -5,6 +5,7 @@ import (
 
 	"github.com/01-edu/z01"
 )
+
 func toInt(s string) int {
 	n := 0
 	for _, ch := range []byte(s) {
@@ -42,7 +43,8 @@ func main() {
 		for i := x; i < len(args); i++ {
 			z01.PrintRune(rune(' '))
 		}
- 	} else {
+ 	}
+	if b == false {
 		y := 97
 		if upper == true {
 			y -= 32
