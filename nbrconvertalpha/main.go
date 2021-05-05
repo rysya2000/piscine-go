@@ -13,9 +13,10 @@ func toInt(s string) int {
 	}
 	return int(n)
 }
+
 func IsValid(s string) bool {
 	for i := 0; i < len(s); i++ {
-		if (s[i] < '0' || s[i] > '9') {
+		if s[i] < '0' || s[i] > '9' {
 			return false
 		}
 	}
@@ -47,12 +48,12 @@ func main() {
 			y -= 32
 		}
 		for i := x; i < len(args); i++ {
-			if (toInt(args[i]) <= 26 && toInt(args[i]) > 0) {
+			if toInt(args[i]) <= 26 && toInt(args[i]) > 0 {
 				z01.PrintRune(rune(toInt(args[i]) + y - 1))
 			} else {
 				z01.PrintRune(rune(' '))
 			}
 		}
-	 }
-	 z01.PrintRune(rune('\n'))
+	}
+	z01.PrintRune(rune('\n'))
 }
