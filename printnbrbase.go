@@ -41,5 +41,5 @@ func PrintNbrBase(nbr int, base string) {
 	}
 	for i := len(ans)-1; i >= 0; i-- {
 		z01.PrintRune(rune(ans[i]))
-	}dfsdfsdf
+	}
 }
