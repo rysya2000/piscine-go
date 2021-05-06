@@ -36,10 +36,10 @@ func PrintNbrBase(nbr int, base string) {
 		nbr = -nbr
 	}
 	for nbr > 0 {
-		ans += string(base[nbr % x])
+		ans += string(base[nbr%x])
 		nbr /= x
 	}
-	for i := len(ans)-1; i >= 0; i-- {
+	for i := len(ans) - 1; i >= 0; i-- {
 		z01.PrintRune(rune(ans[i]))
 	}
 }
