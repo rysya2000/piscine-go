@@ -1,15 +1,12 @@
-package main
-
-import "fmt"
+package piscine
 
 func MakeRange(min, max int) []int {
-	ans := make([]int, max, min)
-	for i := min; i < max; i++ {
-		ans[i] = i
+	if min > max {
+		return nil
+	}
+	ans := make([]int, max-min)
+	for i := 0; i < max-min; i++ {
+		ans[i] = i + min
 	}
 	return ans
-}
-func main() {
-	fmt.Println(MakeRange(5, 10))
-	//fmt.Println(MakeRange(10, 5))
 }
