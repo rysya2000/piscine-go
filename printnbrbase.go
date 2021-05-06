@@ -1,5 +1,7 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
 func IsValid(s string) bool {
 	if len(s) < 2 {
 		return false
