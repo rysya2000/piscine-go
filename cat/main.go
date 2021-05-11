@@ -19,7 +19,6 @@ func main() {
 				}
 				io.WriteString(os.Stdout, err.Error())
 				z01.PrintRune('\n')
-				os.Exit(1)
 			} else {
 				io.WriteString(os.Stdout, string(content))
 			}
