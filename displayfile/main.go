@@ -17,7 +17,7 @@ func main() {
 	if len(args) == 1 {
 		content, err := ioutil.ReadFile(args[0])
 		if len(content) > 0 {
-			fmt.Println(string(content[0:len(content)-1]))
+			fmt.Println(string(content[0 : len(content)-1]))
 		} else {
 			fmt.Println(err)
 		}
