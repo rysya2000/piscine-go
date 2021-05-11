@@ -14,13 +14,13 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) bool {
-	if nbr % 2 == 1 {
+	if nbr%2 == 1 {
 		return true
 	} else {
 		return false
 	}
 }
-dsadsa
+
 func main() {
 	args := os.Args
 	EvenMsg := "I have an even number of arguments"
