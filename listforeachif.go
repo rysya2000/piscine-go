@@ -90,7 +90,7 @@ func PrintList(l *List) {
 		fmt.Print(it.Data, "->")
 		it = it.Next
 	}
-	fmt.Print("nil","\n")
+	fmt.Print("nil", "\n")
 }
 
 func ListPushBack(l *List, data interface{}) {
