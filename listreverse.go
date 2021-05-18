@@ -6,7 +6,6 @@ func ListReverse(l *List) {
 	var NewNext *NodeL
 	for n != nil {
 		n, NewNext, n.Next = n.Next, n, NewNext
-//		fmt.Println(NewNext)
 	}
 	l.Head = NewNext
 }
