@@ -5,7 +5,7 @@ type NodeL struct {
 	Next *NodeL
 }
 
-func ListAt(l *NodeL, pos int) *NodeL{
+func ListAt(l *NodeL, pos int) *NodeL {
 	n := 0
 	for l != nil {
 		n++
