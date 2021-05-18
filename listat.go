@@ -11,7 +11,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 		n++
 		l = l.Next
 		if pos == n {
-			return l.Next
+			return l
 		}
 	}
 	return nil
