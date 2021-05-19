@@ -7,9 +7,9 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 	}
 	x.Next = n2
 	i := n1
-	for ;i != nil; i = i.Next {
+	for ; i != nil; i = i.Next {
 		j := i.Next
-		for ;j != nil; j = j.Next {
+		for ; j != nil; j = j.Next {
 			if i.Data > j.Data {
 				i.Data, j.Data = j.Data, i.Data
 			}
@@ -17,4 +17,3 @@ func SortedListMerge(n1 *NodeI, n2 *NodeI) *NodeI {
 	}
 	return n1
 }
-
