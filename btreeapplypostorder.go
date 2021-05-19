@@ -8,4 +8,3 @@ func BTreeApplyPostorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	BTreeApplyPostorder(root.Right, f)
 	f(root.Data)
 }
-
